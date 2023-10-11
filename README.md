@@ -1,4 +1,4 @@
-# Welcome to the H LAB Cortex Core - FHIR Implementation Guide Repository
+# Welcome to TH Core - FHIR Implementation Guide Repository
 
 To get started, run:
 
