@@ -1,0 +1,16 @@
+{
+  "package-id": "silth.fhir.th.scaffold",
+  "version": "0.1.0",
+  "path": "https://fhir-ig.sil-th.org/th/scaffold/0.1.0",
+  "mode": "milestone",
+  "status": "release",
+  "sequence": "Releases",
+  "desc": "Scaffold of Implementation Guide for SIL-TH IG development",
+  "descmd": "Scaffold of Implementation Guide for SIL-TH IG development",
+  "changes": "change_log.html",
+  "first": true,
+  "title": "Scaffold - FHIR Implementation Guide",
+  "ci-build": "https://fhir-ig.sil-th.org/th/scaffold/",
+  "category": "Administration",
+  "introduction": "[History page] Scaffold of Implementation Guide for SIL-TH IG development"
+}
