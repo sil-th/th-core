@@ -4,7 +4,7 @@
 # │  https://fshschool.org/docs/sushi/configuration/#full-configuration                            │
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: silth.fhir.th.core
-canonical: https://fhir-ig.sil-th.org/th-core
+canonical: https://fhir-ig.sil-th.org/th/core
 version: 0.1.0
 name: THCoreImplementaionGuide
 title: (draft) TH Core - FHIR Implementation Guide
