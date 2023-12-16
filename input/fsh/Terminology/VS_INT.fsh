@@ -176,3 +176,66 @@ Description: "Observation codes จาก TMLT, LOINC, และ SNOMED CT"
 * include codes from system LOINC
 * include codes from system SNOMED_CT_INT where concept is-a #363787002 "Observable entity (observable entity)"
 * include codes from valueset $VS_TMLT
+
+
+
+ValueSet: VS_SCT_MaritalStatus
+Id: vs-sct-marital-status
+Title: "SNOMED CT marital status codes"
+Description: "SNOMED CT marital status codes"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+* include codes from system SNOMED_CT_INT where concept is-a #365581002 "Finding of marital or partnership status (finding)"
+
+
+ValueSet: VS_SCT_GenderRelated
+Id: vs-sct-gender-related
+Title: "SNOMED CT gender related codes"
+Description: "SNOMED CT gender related codes"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+* include codes from system SNOMED_CT_INT where concept descendent-of #285116001 "Gender identity finding (finding)"
+* include codes from system SNOMED_CT_INT where concept descendent-of #407374003 "Transsexual (finding)"
+
+
+
+// ValueSet: VS_SCT_EducationLevel
+// Id: vs-sct-education-level
+// Title: "SNOMED CT education level codes"
+// Description: "SNOMED CT education level codes"
+// * ^meta.profile = $SD_SharableVS
+// * ^experimental = false
+// * ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+// * include codes from system SNOMED_CT_INT where concept descendent-of #365460000 "Finding of education received in the past (finding)"
+
+
+ValueSet: VS_ISCED97
+Id: vs-isced97
+Title: "ระดับการศึกษา ตาม ISCED 1997"
+Description: "ระดับการศึกษา ตาม ISCED 1997"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* ^copyright = "รหัสมาตรฐานระดับการศึกษา พัฒนาโดยสำนักงานสถิติแห่งชาติ (สสช) โดยอ้างอิงมาตรฐานจำแนกการศึกษาสากล (International Standard Classification of Education: ISCED 1997) ของ UNESCO และนำมาประยุกต์เพิ่มรายละเอียดให้เหมาะสมกับระบบการศึกษาของประเทศไทย"
+* include codes from system CS_ISCED97
+
+
+ValueSet: VS_SCT_Smoking
+Id: vs-sct-smoking
+Title: "SNOMED CT smoking codes"
+Description: "SNOMED CT smoking codes"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+* include codes from system SNOMED_CT_INT where concept is-a #365980008 "Finding of tobacco use and exposure (finding)"
+
+
+ValueSet: VS_SCT_Alcohol
+Id: vs-sct-alcohol
+Title: "SNOMED CT alcohol consumption codes"
+Description: "SNOMED CT alcohol consumption codes"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* ^copyright = "This resource includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/get-snomed-ct or info@snomed.org"
+* include codes from system SNOMED_CT_INT where concept is-a #228273003 "Finding relating to alcohol drinking behavior (finding)"

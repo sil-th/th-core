@@ -9,7 +9,7 @@ Description: "ผลการตรวจทางห้องปฏิบัต
 * category MS
   * ^short = "ประเภทของการตรวจ ในที่นี้ให้ระบุเป็น laboratory"
   * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "coding"
+  * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains lab 1..1 MS
 * category[lab] = $CS_HL7_ObservationCategory#laboratory

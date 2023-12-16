@@ -10,7 +10,7 @@ Description: "ผลการตรวจทางรังสีวิทยา
 * category
   * ^short = "ประเภทของการตรวจ ในที่นี้ให้ระบุเป็น imaging"
   * ^slicing.discriminator.type = #value
-  * ^slicing.discriminator.path = "coding"
+  * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains imaging 1..1 MS
 * category[imaging] = $CS_HL7_ObservationCategory#imaging

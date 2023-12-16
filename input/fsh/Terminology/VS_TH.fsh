@@ -27,3 +27,14 @@ Description: "ประเภทสิทธิการรักษาในป
 * ^meta.profile = $SD_SharableVS
 * ^experimental = false
 * include codes from system CS_TH_CoverageType
+
+
+
+ValueSet: VS_TH_ContactOtherSystem
+Id: vs-th-contact-other-system
+Title: "ระบบ (system) การติดต่ออื่น ๆ"
+Description: "ระบบ (system) การติดต่ออื่น ๆ"
+* ^meta.profile = $SD_SharableVS
+* ^experimental = false
+* include codes from system CS_TH_ContactOtherSystem
+

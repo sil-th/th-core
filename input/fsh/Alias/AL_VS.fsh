@@ -30,3 +30,5 @@ Alias: $VS_TH_ISCO08 = https://terms.sil-th.org/core/ValueSet/vs-int-isco-08
 
 
 // TH MoPH code
+
+Alias: $VS_SCT_Marital = https://fhir-ig.sil-th.org/th/core/ValueSet/vs-sct-marital-status

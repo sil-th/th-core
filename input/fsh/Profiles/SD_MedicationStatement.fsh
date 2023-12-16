@@ -6,7 +6,7 @@ Description: "การใช้ยา"
 * ^status = #draft
 * status MS
   * ^short = "สถานะการใช้ยา"
-* category MS
+* category
   * ^short = "ประเภทการใช้ยา"
 * medication MS
   * ^short = "ยาที่ใช้ (ควรเลือกจากรหัส TMT)"
@@ -17,12 +17,12 @@ Description: "การใช้ยา"
 * subject only Reference(THCorePatient)
 * effective[x] MS
   * ^short = "วันเวลาที่เริ่มหรือจะเริ่มใช้ยา"
-* dateAsserted MS
+* dateAsserted
   * ^short = "วันเวลาที่ได้แจ้งข้อมูลนี้"
-* informationSource MS
+* informationSource
   * ^short = "ที่มาของข้อมูล"
 * informationSource only Reference(THCorePractitioner or THCorePractitionerRole or THCorePatient or THCoreRelatedPerson)
-* reason MS
+* reason
   * ^short = "เหตุผลในการใช้ยา"
 * dosage MS
   * ^short = "ขนาดยา"

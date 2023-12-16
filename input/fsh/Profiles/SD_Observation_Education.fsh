@@ -1,8 +1,8 @@
-Profile: THCoreObservationSmoking
+Profile: THCoreObservationEducationLevel
 Parent: Observation
-Id: th-core-observation-smoking
-Title: "TH Core Observation: Smoking Status"
-Description: "พฤติกรรมการใช้ผลิตภัณฑ์ยาสูบ"
+Id: th-core-observation-education-level
+Title: "TH Core Observation: Education Level"
+Description: "การศึกษา"
 * ^status = #draft
 * status MS
   * ^short = "สถานะของการตรวจ ส่วนใหญ่เลือกเป็น final"
@@ -15,8 +15,8 @@ Description: "พฤติกรรมการใช้ผลิตภัณฑ
 * category[social] = $CS_HL7_ObservationCategory#social-history
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
-  * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 72166-2 Tobacco smoking status	"
-* code = $LNC#72166-2
+  * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 82589-3 Highest level of education"
+* code = $LNC#82589-3
 * subject MS
 * subject only Reference(THCorePatient)
   * ^short = "ผู้รับบริการ"
@@ -26,11 +26,16 @@ Description: "พฤติกรรมการใช้ผลิตภัณฑ
   * ^short = "ผู้ทำการตรวจ/ประเมิน"
 * performer only Reference(THCorePractitioner or THCorePractitionerRole or THCoreOrganization)
 * value[x] MS
-  * ^short = "ผลการตรวจ ควรใช้เป็น Quantity เช่น ใช้ unit เป็น \"/d\" ในระบบ UCUM หรืออาจใช้เป็น CodeableConcept ก็ได้เช่นกัน"
-* valueQuantity MS
-  * ^short = "ปริมาณการใช้ผลิตภัณฑ์ยาสูบ"
+  * ^short = "ผลการตรวจ ควรใช้เป็น CodeableConcept"
 * valueCodeableConcept MS
-  * ^short = "รหัสระบุปริมาณการใช้ผลิตภัณฑ์ยาสูบ"
-* valueCodeableConcept from VS_SCT_Smoking (preferred)
+  * ^short = "รหัสอาชีพ จาก ISCED 97 แต่สามารถใช้รหัสอื่นได้"
+* valueCodeableConcept from VS_ISCED97 (preferred)
+
+
+
+
+
+
+
 
 
