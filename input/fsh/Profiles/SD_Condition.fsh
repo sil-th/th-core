@@ -4,7 +4,6 @@ Id: th-core-condition
 Title: "TH Core Condition"
 Description: "โรค/ปัญหา/การวินิจฉัย"
 * ^status = #draft
-* ^status = #active
 * clinicalStatus MS
   * ^short = "สถานะของโรคหรือปัญหา"
 * verificationStatus MS

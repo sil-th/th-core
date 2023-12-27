@@ -14,3 +14,16 @@ Description: "ระบบ (system) การติดต่ออื่น ๆ 
   * ^short = "รหัสประเทศ"
 * value[x] only code
 * valueCode from VS_TH_ContactOtherSystem (extensible)
+
+
+
+Extension: EX_TH_Address_OfficialAddress
+Id: ex-address-official-address
+Title: "Official Address"
+Description: "ใช้ระบุว่าที่อยู่นี้เป็นที่อยู่ตามบัตรประชาชน"
+* ^status = #draft
+* ^experimental = false
+* ^date = "2023-09-25"
+* ^context[0].type = #element
+* ^context[=].expression = "Address"
+* value[x] only boolean

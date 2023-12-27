@@ -28,7 +28,7 @@ Description: "การศึกษา"
 * value[x] MS
   * ^short = "ผลการตรวจ ควรใช้เป็น CodeableConcept"
 * valueCodeableConcept MS
-  * ^short = "รหัสอาชีพ จาก ISCED 97 แต่สามารถใช้รหัสอื่นได้"
+  * ^short = "รหัสระดับการศึกษา จาก ISCED 97 แต่สามารถใช้รหัสอื่นได้"
 * valueCodeableConcept from VS_ISCED97 (preferred)
 
 
