@@ -29,7 +29,7 @@ Description: "ข้อมูลการรับวัคซีน"
   * ^short = "สถานที่ที่ให้วัคซีน"
 * site MS
   * ^short = "ตำแหน่งที่ให้วัคซีน (ควรเลือกจาก SNOMED CT)"
-* site from $VS_HL7_BodySite (extensible)
+* site from SNOMEDCTBodyStructures (extensible)
 * route MS
   * ^short = "ช่องทาง (route) การให้วัคซีน"
 * performer MS

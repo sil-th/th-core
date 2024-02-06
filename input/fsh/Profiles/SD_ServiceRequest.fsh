@@ -9,7 +9,7 @@ Description: "การร้องขอบริการ/การสั่�
 * status MS
   * ^short = "สถานะของคำขอ (เป็น element บังคับใน FHIR) ได้แก่ draft | active | on-hold | revoked | completed | entered-in-error | unknown"
 * intent MS
-  * ^short = "เจตนาของคำขอ (เป็น element บังคับใน FHIR) เช่น proposal | plan | directive | order และอื่น ๆ "
+  * ^short = "เจตนาของคำขอ (เป็น element บังคับใน FHIR) เช่น proposal | plan | directive | order และอื่น ๆ"
 * category MS
   * ^short = "ประเภทของคำขอ"
 * category from VS_SCT_ServiceRequestCategory (preferred)
@@ -32,4 +32,4 @@ Description: "การร้องขอบริการ/การสั่�
   * ^short = "ผู้ปฏิบัติตามคำขอ"
 * performer only Reference(THCorePractitioner or THCorePractitionerRole or THCoreOrganization)
 * reason MS
-  * ^short = "เหตผลประกอบการส่งคำขอนี้"
+  * ^short = "เหตุผลประกอบการส่งคำขอนี้"

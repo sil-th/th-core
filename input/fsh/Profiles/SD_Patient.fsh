@@ -5,10 +5,10 @@ Title: "TH Core Patient"
 Description: "ผู้ป่วย/ผู้รับบริการสุขภาพ"
 * ^status = #draft
 * extension contains
-  $EX_HL7_Nationality named nationality 0.. MS and
-  $EX_HL7_Religion named religion 0.. MS
+  PatNationality named nationality 0.. MS and
+  PatReligion named religion 0.. MS
 * extension[nationality] ^short = "สัญชาติของผู้ป่วย"
-* extension[nationality].extension[code].valueCodeableConcept from $VS_ISO3166 (extensible)
+* extension[nationality].extension[code].valueCodeableConcept from CountryValueSet (extensible)
 * extension[religion] ^short = "ความเชื่อทางศาสนาของผู้ป่วย"
 * extension[religion].valueCodeableConcept from VS_SCT_Religion (extensible)
 * identifier MS
@@ -24,8 +24,8 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
   * ^short = "เลขประจำตัวประชาชน"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#cid
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#cid
   * system 1.. MS
     * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
   * system = $ID_ThaiCid (exactly)
@@ -37,8 +37,8 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
   * ^short = "หมายเลขหนังสือเดินทาง (passport)"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_HL7_IdentifierType (extensible)
-  * type = $CS_HL7_IdentifierType#PPN
+  * type from IdentifierTypeCodes (extensible)
+  * type = IdentifierType#PPN
   * system 1.. MS
     * ^short = "กำหนด URL ตามรูปแบบ http://hl7.org/fhir/sid/passport-[XXX] โดย [XXX] คือ รหัสประเทศสามตัวอักษรตามมาตรฐาน ISO 3166"
     * ^example.label = "Thai passport URL"
@@ -51,8 +51,8 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
   * ^short = "เลขประจำตัวผู้ป่วย"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#localHn
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#localHn
   * system 1..
     * ^short = "ระบบการระบุตัวตน หากมีรหัส HCODE ให้ใช้ URL ในรูปแบบ https://terms.sil-th.org/hcode/5/{XXXXX}/HN หรือ https://terms.sil-th.org/hcode/9/{XXXXX}/HN โดยที่ {XXXXX} คือรหัส HCODE 5 หลัก หรือ 9 หลัก ซึ่งออกโดยกยผ."
     * ^example.label = "HN system URL"
@@ -70,7 +70,7 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
     thai 0..* MS and
     english 0..* MS
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-  * extension contains $EX_HL7_Language named language 1..1 MS
+  * extension contains HumanLanguage named language 1..1 MS
   * extension[language]
     * valueCode = #th
       * ^short = "รหัสของภาษาไทย"
@@ -81,7 +81,7 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
   * prefix MS
   * prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-  * extension contains $EX_HL7_Language named language 1..1
+  * extension contains HumanLanguage named language 1..1
   * extension[language]
     * valueCode = #en
       * ^short = "รหัสของภาษาอังกฤษ"
@@ -127,9 +127,9 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
 * address MS
   * ^short = "ที่อยู่"
   * extension contains
-    $EX_TH_AddressDopaCode named addressCode 0..1 MS and
-    $EX_HL7_Geolocation named geolocation 0..1 MS and
-    $EX_TH_AddressStructuredLine named structuredLine 0..1 MS
+    EX_TH_AddressDopaCode named addressCode 0..1 MS and
+    Geolocation named geolocation 0..1 MS and
+    EX_TH_AddressStructuredLine named structuredLine 0..1 MS
   * extension[addressCode] ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
   * extension[geolocation] ^short = "พิกัดละติจูด ลองจิจูด"
   * extension[structuredLine] ^short = "รายละเอียดที่อยู่"
@@ -150,5 +150,5 @@ Description: "ผู้ป่วย/ผู้รับบริการสุ�
 * maritalStatus MS
   * ^short = "สถานะสมรส ควรใช้รหัสของ HL7 (ถ้ามี) หากไม่มีสามารถใช้รหัสระบบอื่น ๆ ได้"
   * ^binding.additional.purpose = #extensible
-  * ^binding.additional.valueSet = $VS_SCT_Marital
+  * ^binding.additional.valueSet = Canonical(VS_SCT_MaritalStatus)
 * generalPractitioner MS

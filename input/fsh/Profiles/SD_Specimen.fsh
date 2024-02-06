@@ -20,7 +20,7 @@ Description: "สิ่งส่งตรวจ"
   * method from VS_SCT_SpecimenCollectionMethod (extensible)
   * bodySite MS 
     * ^short = "ส่วนของร่างกายที่เก็บสิ่งส่งตรวจ"
-  * bodySite from $VS_HL7_BodySite (extensible)
+  * bodySite from SNOMEDCTBodyStructures (extensible)
 * processing MS
   * ^short = "รายละเอียดการตรวจ/ประมวลผล"
   * time[x] MS

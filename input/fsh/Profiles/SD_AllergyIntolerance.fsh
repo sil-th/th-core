@@ -5,7 +5,7 @@ Title: "TH Core AllergyIntolerance"
 Description: "การแพ้ยา แพ้อาหาร และสารเคมีอื่น ๆ"
 * ^status = #draft
 * extension contains
-    $EX_TH_AllergyIntoleranceCertainty named certainty 0..1 MS
+    EX_TH_AllergyIntoleranceCertainty named certainty 0..1 MS
 * extension[certainty] ^short = "ความเป็นไปได้ของอาการไม่พึงประสงค์ที่พบ ตาม Naranjo's algorithm"
 * clinicalStatus MS
   * ^short = "สถานะการแพ้"
@@ -31,13 +31,13 @@ Description: "การแพ้ยา แพ้อาหาร และสา�
   informant 0..* MS  
 * participant[author] MS
   * ^short = "ผู้ยืนยันความถูกต้องของข้อมูล"
-  * function = $CS_HL7_ProvenanceParticipantType#author
+  * function = ProvenanceParticipantType#author
     * ^short = "ชนิดของการมีส่วนเกี่ยวข้อง เลือกเป็น author"
   * actor only Reference(THCorePractitioner or THCoreOrganization)
     * ^short = "ผู้ให้บริการสุขภาพ หรือองค์กรที่เป็นผู้ยืนยันข้อมูล"
 * participant[informant] MS
   * ^short = "ผู้ให้ข้อมูลการแพ้"
-  * function = $CS_HL7_ProvenanceParticipantType#informant
+  * function = ProvenanceParticipantType#informant
     * ^short = "ชนิดของการมีส่วนเกี่ยวข้อง เลือกเป็น informant"
 * reaction MS
   * ^short = "เหตุการณ์ที่เกิดอาการแพ้"

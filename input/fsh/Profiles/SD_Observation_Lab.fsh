@@ -12,7 +12,7 @@ Description: "ผลการตรวจทางห้องปฏิบัต
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains lab 1..1 MS
-* category[lab] = $CS_HL7_ObservationCategory#laboratory
+* category[lab] = ObservationCategoryCodes#laboratory
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
   * ^short = "ชนิดการตรวจทางห้องปฏิบัติการ สามารถใช้ได้ทั้งรหัส TMLT, LOINC และ SNOMED CT"
@@ -31,7 +31,7 @@ Description: "ผลการตรวจทางห้องปฏิบัต
   * ^short = "ผลการตรวจ ส่วนใช้ data type เป็น Quantity และ CodeableConcept"
 * valueQuantity MS
 * valueCodeableConcept MS
-* valueCodeableConcept from $VS_IPS_LabResultCode (preferred)
+* valueCodeableConcept from ResultsCodedValuesLaboratoryUvIps (preferred)
 * dataAbsentReason MS
   * ^short = "หากไม่มีการใส่ผลการตรวจ กรุณาระบุเหตุผล"
 * interpretation MS

@@ -1,5 +1,5 @@
 Profile: THCoreObservationVitals
-Parent: $SD_Observation_Vital
+Parent: Observationvitalsigns
 Id: th-core-observation-vitals
 Title: "TH Core Observation: Vital Signs"
 Description: "ผลการตรวจสัญญาณชีพ"

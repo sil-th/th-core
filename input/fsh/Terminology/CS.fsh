@@ -1,8 +1,8 @@
 CodeSystem: CS_TH_CoverageType
 Id: cs-th-coverage-type
 Title: "ประเภทสิทธิการรักษาในประเทศไทย"
-Description: "ประเภทสิทธิการรักษาในประเทศไทย "
-* ^meta.profile = $SD_SharableCS
+Description: "ประเภทสิทธิการรักษาในประเทศไทย"
+* ^meta.profile = Canonical(ShareableCodeSystem)
 * ^experimental = false
 * ^caseSensitive = false
 * #UCS "ประกันสุขภาพถ้วนหน้า"
@@ -22,7 +22,7 @@ CodeSystem: CS_TH_ContactOtherSystem
 Id: cs-th-contact-other-system
 Title: "ระบบ (system) การติดต่ออื่น ๆ"
 Description: "ระบบ (system) การติดต่ออื่น ๆ"
-* ^meta.profile = $SD_SharableCS
+* ^meta.profile = Canonical(ShareableCodeSystem)
 * ^experimental = false
 * ^caseSensitive = false
 * #line "LINE"
@@ -33,7 +33,7 @@ CodeSystem: CS_ISCED97
 Id: cs-isced97
 Title: "ระดับการศึกษา ตาม ISCED 1997"
 Description: "ระดับการศึกษา ตาม ISCED 1997"
-* ^meta.profile = $SD_SharableCS
+* ^meta.profile = Canonical(ShareableCodeSystem)
 * ^experimental = false
 * ^caseSensitive = false
 * ^copyright = "รหัสมาตรฐานระดับการศึกษา พัฒนาโดยสำนักงานสถิติแห่งชาติ (สสช) โดยอ้างอิงมาตรฐานจำแนกการศึกษาสากล (International Standard Classification of Education: ISCED 1997) ของ UNESCO และนำมาประยุกต์เพิ่มรายละเอียดให้เหมาะสมกับระบบการศึกษาของประเทศไทย"

@@ -12,11 +12,11 @@ Description: "พฤติกรรมการดื่มเครื่อง
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains social 1..1 MS
-* category[social] = $CS_HL7_ObservationCategory#social-history
+* category[social] = ObservationCategoryCodes#social-history
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
   * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 74013-4 Alcoholic drinks per day"
-* code = $LNC#74013-4
+* code = LOINC#74013-4
 * subject MS
 * subject only Reference(THCorePatient)
   * ^short = "ผู้รับบริการ"

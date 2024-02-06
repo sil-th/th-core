@@ -12,11 +12,11 @@ Description: "พฤติกรรมการใช้ผลิตภัณฑ
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains social 1..1 MS
-* category[social] = $CS_HL7_ObservationCategory#social-history
+* category[social] = ObservationCategoryCodes#social-history
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
-  * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 72166-2 Tobacco smoking status	"
-* code = $LNC#72166-2
+  * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 72166-2 Tobacco smoking status"
+* code = LOINC#72166-2
 * subject MS
 * subject only Reference(THCorePatient)
   * ^short = "ผู้รับบริการ"

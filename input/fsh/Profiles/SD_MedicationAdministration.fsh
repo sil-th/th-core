@@ -8,7 +8,7 @@ Description: "การบริหารยา"
   * ^short = "สถานะการบริหารยา"
 * medication MS
   * ^short = "ยาที่บริหาร (ควรเลือกจากรหัส TMT)"
-* medication from $VS_TMT (extensible)
+* medication from VS_TMT (extensible)
 * medication only CodeableReference(THCoreMedication)
 * subject MS
   * ^short = "ผู้ป่วย/ผู้รับบริการ"

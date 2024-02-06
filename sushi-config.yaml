@@ -5,7 +5,7 @@
 # ╰────────────────────────────────────────────────────────────────────────────────────────────────╯
 id: silth.fhir.th.core
 canonical: https://fhir-ig.sil-th.org/th/core
-version: 0.1.0
+version: 0.1.0-preview
 name: THCoreImplementaionGuide
 title: (draft) TH Core - FHIR Implementation Guide
 status: draft
@@ -32,15 +32,17 @@ parameters:
   excludettl: true
   excludemap: true
 copyrightYear: 2023+
-releaseLabel: trial-use
+releaseLabel: qa-preview
 
 pages:
   index.md:
     title: TH Core FHIR IG
   profiles.md:
     title: รายการ Profiles
-  # extensions.md:
-  #   title: รายการ Extensions
+  change_log.md:
+    title: Release Notes
+  general-guidance.md:
+    title: คำแนะนำทั่วไป
 
 # ╭────────────────────────────────────────────menu.xml────────────────────────────────────────────╮
 # │  To use a provided input/includes/menu.xml file, delete the "menu" property below.             │
@@ -48,9 +50,9 @@ pages:
 menu:
   หน้าแรก: index.html
   สารบัญ: toc.html
+  คำแนะนำ:
+    คำแนะนำทั่วไป: general-guidance.html
   เนื้อหาทั้งหมด: artifacts.html
   Profiles: profiles.html
-  # Extensions: extensions.html
-  # 43 แฟ้ม plus: files-listing.html
-  # Other Resources:
-  #   "FHIR Spec ": new-tab {{site.data.fhir.path}}index.html
+  อื่น ๆ:
+    Release Notes: change_log.html

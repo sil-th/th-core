@@ -10,7 +10,7 @@ Description: "การใช้ยา"
   * ^short = "ประเภทการใช้ยา"
 * medication MS
   * ^short = "ยาที่ใช้ (ควรเลือกจากรหัส TMT)"
-* medication from $VS_TMT (extensible)
+* medication from VS_TMT (extensible)
 * medication only CodeableReference(THCoreMedication)
 * subject MS
   * ^short = "ผู้ป่วย/ผู้รับบริการ"

@@ -1,3 +1,10 @@
+// Tempolary URL
+Alias: $CS_TMT = https://terms.sil-th.org/core/CodeSystem/cs-th-tmt
+Alias: $CS_TMLT = https://terms.sil-th.org/core/CodeSystem/cs-th-tmlt
+Alias: $EDQM = http://standardterms.edqm.eu
+Alias: $ISCO08 = urn:oid:2.16.840.1.113883.2.9.6.2.7
+Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
+
 // From terminology.hl7.org
 Alias: $ID_ThaiPassport = https://hl7.org/fhir/sid/passport-THA
 

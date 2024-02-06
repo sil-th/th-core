@@ -5,7 +5,7 @@ Title: "TH Core RelatedPerson"
 Description: "ญาติหรือผู้เกี่ยวข้องกับผู้รับบริการ"
 * ^status = #draft
 * identifier MS
-  * ^short = "การระบุตัวตนของผู้รับบริการ"
+  * ^short = "การระบุตัวตนของญาติ/ผู้เกี่ยวข้อง"
   * ^slicing.discriminator[0].type = #value
   * ^slicing.discriminator[=].path = "type"
   * ^slicing.rules = #open
@@ -16,8 +16,8 @@ Description: "ญาติหรือผู้เกี่ยวข้องก
   * ^short = "เลขประจำตัวประชาชน"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#cid
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#cid
   * system 1.. MS
     * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
   * system = $ID_ThaiCid (exactly)
@@ -29,8 +29,8 @@ Description: "ญาติหรือผู้เกี่ยวข้องก
   * ^short = "หมายเลขหนังสือเดินทาง (passport)"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_HL7_IdentifierType (extensible)
-  * type = $CS_HL7_IdentifierType#PPN
+  * type from IdentifierTypeCodes (extensible)
+  * type = IdentifierType#PPN
   * system 1.. MS
     * ^short = "กำหนด URL ตามรูปแบบ http://hl7.org/fhir/sid/passport-[XXX] โดย [XXX] คือ รหัสประเทศสามตัวอักษรตามมาตรฐาน ISO 3166"
     * ^example.label = "Thai passport URL"
@@ -54,7 +54,7 @@ Description: "ญาติหรือผู้เกี่ยวข้องก
     thai 0..* MS and
     english 0..* MS
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-  * extension contains $EX_HL7_Language named language 1..1 MS
+  * extension contains HumanLanguage named language 1..1 MS
   * extension[language]
     * valueCode = #th
       * ^short = "รหัสของภาษาไทย"
@@ -65,7 +65,7 @@ Description: "ญาติหรือผู้เกี่ยวข้องก
   * prefix MS
   * prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-  * extension contains $EX_HL7_Language named language 1..1
+  * extension contains HumanLanguage named language 1..1
   * extension[language]
     * valueCode = #en
       * ^short = "รหัสของภาษาอังกฤษ"
@@ -100,9 +100,9 @@ Description: "ญาติหรือผู้เกี่ยวข้องก
 * address MS
   * ^short = "ที่อยู่"
   * extension contains
-    $EX_TH_AddressDopaCode named addressCode 0..1 MS and
-    $EX_HL7_Geolocation named geolocation 0..1 MS and
-    $EX_TH_AddressStructuredLine named structuredLine 0..1 MS
+    EX_TH_AddressDopaCode named addressCode 0..1 MS and
+    Geolocation named geolocation 0..1 MS and
+    EX_TH_AddressStructuredLine named structuredLine 0..1 MS
   * extension[addressCode] ^short = "รหัสที่อยู่ ตามกรมการปกครอง"
   * extension[geolocation] ^short = "พิกัดละติจูด ลองจิจูด"
   * extension[structuredLine] ^short = "รายละเอียดที่อยู่"

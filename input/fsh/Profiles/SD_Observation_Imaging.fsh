@@ -13,7 +13,7 @@ Description: "ผลการตรวจทางรังสีวิทยา
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains imaging 1..1 MS
-* category[imaging] = $CS_HL7_ObservationCategory#imaging
+* category[imaging] = ObservationCategoryCodes#imaging
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
   * ^short = "ชนิดการตรวจทางรังสีวินิจฉัย สามารถใช้ได้ทั้งรหัส LOINC และ SNOMED CT"
@@ -35,10 +35,10 @@ Description: "ผลการตรวจทางรังสีวิทยา
   * ^short = "หากไม่มีการใส่ผลการตรวจ กรุณาระบุเหตุผล"
 * bodySite MS
   * ^short = "ส่วนของร่างกายที่ทำการตรวจ"
-* bodySite from $VS_HL7_BodySite (extensible)
+* bodySite from SNOMEDCTBodyStructures (extensible)
 * component MS
   * ^short = "ส่วนประกอบย่อยของการตรวจ ตัวอย่างจาก SNOMED-DICOM"
   * code 1..1 MS
-  * code from $VS_IPS_ImaingObsComponent (example)
+  * code from ResultsRadiologyMeasurementObservationSnomedDicomUvIps (example)
   * value[x] MS
   * value[x] ^short = "ผลการตรวจของ component นั้น ๆ"

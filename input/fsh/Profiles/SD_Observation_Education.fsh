@@ -12,11 +12,11 @@ Description: "การศึกษา"
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains social 1..1 MS
-* category[social] = $CS_HL7_ObservationCategory#social-history
+* category[social] = ObservationCategoryCodes#social-history
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
   * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 82589-3 Highest level of education"
-* code = $LNC#82589-3
+* code = LOINC#82589-3
 * subject MS
 * subject only Reference(THCorePatient)
   * ^short = "ผู้รับบริการ"

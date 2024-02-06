@@ -34,7 +34,7 @@ Description: "การรับบริการ"
   * ^short = "ระยะเวลาที่เกิดการรับบริการ"
 * reason MS
   * ^short = "เหตุผลในการรับบริการ"
-  * value from $VS_HL7_EncounterReason (extensible)
+  * value from EncounterReasonCodes (extensible)
     * ^short = "รหัสระบุเหตุผลในการรับบริการ (ควรใช้รหัส SNOMED CT)"
 * diagnosis MS
   * ^short = "คำวินิจฉัย"

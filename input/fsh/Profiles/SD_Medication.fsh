@@ -6,10 +6,10 @@ Description: "ข้อมูลชนิดยา"
 * ^status = #draft
 * code MS
   * ^short = "รหัสยา (ควรใช้รหัส TMT)"
-* code from $VS_TMT (extensible)
+* code from VS_TMT (extensible)
 * doseForm MS
   * ^short = "รูปแบบยา (ควรใช้รหัส EDQM)"
-* doseForm from $VS_IPS_MedicineDoseform (preferred)
+* doseForm from MedicineDoseFormUvIps (preferred)
 * ingredient MS
   * ^short = "รายการส่วนประกอบ"
   * item MS

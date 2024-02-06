@@ -12,11 +12,11 @@ Description: "อาชีพ"
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * category contains social 1..1 MS
-* category[social] = $CS_HL7_ObservationCategory#social-history
+* category[social] = ObservationCategoryCodes#social-history
   * coding ^short = "ระบุ system และ code ตามที่กำหนด"
 * code MS
   * ^short = "ชนิดของการตรวจ ใช้รหัส LOINC 11341-5 History of Occupation"
-* code = $LNC#11341-5
+* code = LOINC#11341-5
 * subject MS
 * subject only Reference(THCorePatient)
   * ^short = "ผู้รับบริการ"
@@ -29,7 +29,7 @@ Description: "อาชีพ"
   * ^short = "ผลการตรวจ ควรใช้เป็น CodeableConcept"
 * valueCodeableConcept MS
   * ^short = "รหัสอาชีพ จาก ISCO 08 เวอร์ชันภาษาไทย แต่สามารถใช้รหัสอื่นได้"
-* valueCodeableConcept from $VS_TH_ISCO08 (preferred)
+* valueCodeableConcept from VS_INT_ISCO08 (preferred)
 
 
 

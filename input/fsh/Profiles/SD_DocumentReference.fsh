@@ -12,7 +12,7 @@ Description: "ข้อมูล metadata ของเอกสาร สาม�
   * ^short = "สถานะของเอกสารที่ถูกอ้างอิง"
 * type MS
   * ^short = "ชนิดของเอกสาร แนะนำให้ใช้รหัส LOINC"
-* type from $VS_HL7_DocType (preferred)
+* type from FHIRDocumentTypeCodes (preferred)
 * subject MS
   * ^short = "ผู้ป่วย/ผู้รับบริการ"
 * subject only Reference(THCorePatient)

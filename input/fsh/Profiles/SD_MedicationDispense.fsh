@@ -6,7 +6,7 @@ Description: "การจ่ายยา"
 * ^status = #draft
 * medication MS
   * ^short = "ยาที่จ่าย (ควรเลือกจากรหัส TMT)"
-* medication from $VS_TMT (extensible)
+* medication from VS_TMT (extensible)
 * medication only CodeableReference(THCoreMedication)
 * subject only Reference(THCorePatient)
 * subject MS

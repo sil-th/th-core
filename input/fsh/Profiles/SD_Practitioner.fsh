@@ -15,8 +15,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * ^short = "เลขประจำตัวประชาชน"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#cid
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#cid
   * system 1.. MS
     * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
   * system = $ID_ThaiCid (exactly)
@@ -38,7 +38,7 @@ Description: "ผู้ให้บริการสุขภาพ"
     thai 0..* MS and
     english 0..* MS
 * name[thai] ^short = "ชื่อ-นามสกุล ภาษาไทย"
-  * extension contains $EX_HL7_Language named language 1..1 MS
+  * extension contains HumanLanguage named language 1..1 MS
   * extension[language]
     * valueCode = #th
       * ^short = "รหัสของภาษาไทย"
@@ -49,7 +49,7 @@ Description: "ผู้ให้บริการสุขภาพ"
   * prefix MS
   * prefix ^short = "คำนำหน้า ภาษาไทย"
 * name[english] ^short = "ชื่อ-นามสกุล ภาษาอังกฤษ (ถ้ามี)"
-  * extension contains $EX_HL7_Language named language 1..1
+  * extension contains HumanLanguage named language 1..1
   * extension[language]
     * valueCode = #en
       * ^short = "รหัสของภาษาอังกฤษ"
@@ -99,8 +99,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[doctorId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเวชกรรม"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proDoc
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proDoc
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiDoctor
@@ -109,8 +109,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[nurseId] ^short = "เลขใบอนุญาตประกอบวิชาชีพพยาบาล"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proNurse
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proNurse
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiNurse
@@ -119,8 +119,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[pharmId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเภสัชกร"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proPharm
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proPharm
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiPharmacist
@@ -129,8 +129,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[dentId] ^short = "เลขใบอนุญาตประกอบวิชาชีพทันตกรรม"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proDent
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proDent
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiDentist
@@ -139,8 +139,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[medtechId] ^short = "เลขใบอนุญาตประกอบวิชาชีพเทคนิคการแพทย์"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proMedtech
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proMedtech
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiMedTech
@@ -149,8 +149,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[physioId] ^short = "เลขใบอนุญาตประกอบวิชาชีพกายภาพบำบัด"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proPhysio
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proPhysio
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiPhysio
@@ -159,8 +159,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[vetId] ^short = "เลขใบอนุญาตประกอบวิชาชีพการสัตวแพทย์"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#proVet
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#proVet
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaiVet
@@ -169,8 +169,8 @@ Description: "ผู้ให้บริการสุขภาพ"
   * identifier[volunId] ^short = "เลขประจำตัวอาสาสมัครสาธารณสุขประจำหมู่บ้าน (อสม.)"
     * type MS
       * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-    * type from $VS_TH_IdentifierType (extensible)
-    * type = $CS_TH_IdentifierType#healthVolun
+    * type from VS_TH_IdentifierType (extensible)
+    * type = CS_TH_IdentifierType#healthVolun
     * system 1.. MS
       * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
     * system = $ID_ThaihealthVolunteer

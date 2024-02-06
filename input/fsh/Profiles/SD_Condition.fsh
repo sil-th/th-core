@@ -32,6 +32,6 @@ Description: "โรค/ปัญหา/การวินิจฉัย"
   author 0..1 MS
 * participant[author] MS
   * ^short = "ผู้ให้การวินิจฉัย"
-  * function = $CS_HL7_ProvenanceParticipantType#author
+  * function = ProvenanceParticipantType#author
     * ^short = "ชนิดของการมีส่วนเกี่ยวข้อง เลือกเป็น author"
   * actor only Reference(THCorePractitioner)

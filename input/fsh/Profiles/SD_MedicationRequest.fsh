@@ -10,7 +10,7 @@ Description: "การสั่งยา"
   * ^short = "วัตถุประสงค์การสั่ง (เป็น element บังคับของ FHIR) ส่วนใหญ่คือ order"
 * medication MS
   * ^short = "ยาที่สั่ง (ควรเลือกจากรหัส TMT)"
-* medication from $VS_TMT (extensible)
+* medication from VS_TMT (extensible)
 * medication only CodeableReference(THCoreMedication)
 * subject MS
   * ^short = "ผู้ป่วย/ผู้รับบริการ"

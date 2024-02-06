@@ -1,1 +1,0 @@
-Alias: $SD_Observation_Vital = http://hl7.org/fhir/StructureDefinition/vitalsigns

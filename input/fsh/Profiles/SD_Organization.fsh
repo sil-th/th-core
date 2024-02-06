@@ -16,8 +16,8 @@ Description: "องค์กรหรือหน่วยงาน"
 * identifier[hcode] ^short = "รหัสสถานพยาบาล 5 หลัก หรือ 9 หลัก"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#hcode
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#hcode
   * system 1.. MS
     * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
   * system = $ID_Hcode
@@ -26,15 +26,15 @@ Description: "องค์กรหรือหน่วยงาน"
 * identifier[depCode] ^short = "รหัสประจำแผนก ของหน่วยบริการ"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#localDep
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#localDep
   * value 1.. MS
     * ^short = "รหัสประจำแผนก ของหน่วยบริการ"
 * identifier[jid] ^short = "เลขทะเบียนนิติบุคคล"
   * type MS
     * ^short = "ชนิดการระบุตัวตน ใช้ system และ code ที่กำหนด"
-  * type from $VS_TH_IdentifierType (extensible)
-  * type = $CS_TH_IdentifierType#jid
+  * type from VS_TH_IdentifierType (extensible)
+  * type = CS_TH_IdentifierType#jid
   * system 1.. MS
     * ^short = "ระบบการระบุตัวตน ใช้ URL ที่กำหนด"
   * system = $ID_ThaiJid

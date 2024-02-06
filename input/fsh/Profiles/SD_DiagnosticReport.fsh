@@ -10,7 +10,7 @@ Description: "รายงานผลการตรวจวินิจฉั
   * ^short = "สถานะของรายงาน"
 * category MS
   * ^short = "ประเภทของรายงาน (แนะนำให้เลือกจากรหัสของ HL7)"
-* category from $VS_HL7_DiagServiceSection (preferred)
+* category from DiagnosticServiceSectionCodes (preferred)
 * code MS
   * ^short = "รหัสชนิดการตรวจวินิจฉัย สามารถใช้ได้ทั้งรหัส TMLT, LOINC, SNOMED CT"
 * code from VS_INT_Observation (extensible)
